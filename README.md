@@ -29,4 +29,4 @@ It will return a big `output.lua` file which is a mix of all your local lua file
 - [ ] Minify code
 
 ## License
-The license comes bundled within the pack.lua file as a comment.
+The license comes bundled within the `pack.lua` file as a comment.
