@@ -9,6 +9,12 @@ After you have both of those ready, you can simply run `./pack.lua` as an execut
 
 It will return a big `output.lua` file which is a mix of all your local lua files alongside a `.log` file which stores everything logged.
 
+## Test it out!
+    git clone https://github.com/darltrash/pack.lua
+    cd pack.lua
+    ./pack.lua
+    lua output.lua
+
 ## Limitations
 - No minifying mechanisms
 - Only bundles the files found locally (No LuaRocks for example)
@@ -21,3 +27,6 @@ It will return a big `output.lua` file which is a mix of all your local lua file
 - [ ] Add Windows support
 - [ ] Add comptime features to add or remove code features with flags and no macros
 - [ ] Minify code
+
+## License
+The license comes bundled within the pack.lua file as a comment.

@@ -4,7 +4,8 @@ _=[[
 ]]
 
 -- ./pack.lua: A simple embedded Lua script packer designed for simplicity
--- github.com/darltrash/pack.lua
+-- Find the original here: github.com/darltrash/pack.lua
+--
 -- Copyright (c) 2021 Nelson "darltrash" Lopez
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy of
