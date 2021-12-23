@@ -77,7 +77,7 @@ end
 log.info("Processing './main.lua'")
 local mainFile = log.assert(io.open("main.lua", "r"), "'main.lua' not found!")
 local main = mainFile:read("all")
-mainFile.close()
+mainFile:close()
 
 math.randomseed(os.time())
 local buildLibs = "__build_libs_".. math.random(1, 255) -- Random number added to make sure nothing clashes!
@@ -112,7 +112,7 @@ for _file in p:lines() do
 
         local filehandle = log.assert(io.open(filePath, "r"), "Apparently, you dont have enough permissions to read '%s'", filePath)
             output = output .. buildLibs .. "[\""..fileLua.."\"] = (function()\n" .. filehandle:read("all") .. "\nend)\n\n"
-        filehandle.close()
+        filehandle:close()
     end
 end
 output = output .. main
